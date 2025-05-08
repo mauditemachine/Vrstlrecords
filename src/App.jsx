@@ -11,8 +11,8 @@ function App() {
         <Logo />
         <p className="cta">
           Website under construction, for demos please send it at{' '}
-          <a href="mailto:booking@vrstlrecords.com" className="mail">
-            booking@vrstlrecords.com
+          <a href="mailto:demo@vrstlrecords.com" className="mail">
+            demo@vrstlrecords.com
           </a>
         </p>
       </main>
