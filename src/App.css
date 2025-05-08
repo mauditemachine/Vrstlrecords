@@ -63,9 +63,11 @@ body {
 .description {
   max-width: 800px;
   text-align: center;
-  font-size: 0.75rem;
+  font-size: .80rem;
   color: var(--text);
-  line-height: 1.4
+  line-height: 1.4;
+  font-weight: 501;
+  letter-spacing: -0.18px;
 }
 .main-center {
   flex: 1;
