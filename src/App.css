@@ -1,0 +1,148 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter_24pt-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter_24pt-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter_24pt-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter_24pt-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --bg: #f8f5ec;
+  --text: #232323;
+  --accent: #222;
+  --muted: #888;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 2.2rem;
+}
+
+.description {
+  max-width: 600px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.main-center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 340px;
+  max-width: 80vw;
+  margin-bottom: 1.7rem;
+  display: block;
+}
+
+.cta {
+  font-size: 1rem;
+  color: var(--text);
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.mail {
+  color: var(--accent);
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.mail:hover {
+  color: var(--muted);
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 2.2rem 1.1rem 2.2rem;
+  box-sizing: border-box;
+  font-size: 0.82rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: var(--bg);
+  z-index: 10;
+}
+
+.copyright {
+  color: var(--muted);
+  font-size: 0.52rem;
+  align-self: flex-end;
+  text-align: left;
+  max-width: 40vw;
+  letter-spacing: -0.02rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.versatile {
+  color: var(--muted);
+  font-size: 0.82rem;
+  text-align: right;
+  align-self: flex-end;
+  max-width: 320px;
+  word-break: break-word;
+  line-height: 9px;
+}
+
+.versatile b {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.versatile i {
+  font-style: italic;
+  color: var(--muted);
+  font-size: 0.58rem;
+}
