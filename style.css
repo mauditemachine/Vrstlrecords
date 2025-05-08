@@ -46,36 +46,54 @@ body {
   min-height: 100vh;
 }
 
-.main-container {
+.page-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 2.2rem;
+}
+
+.description {
+  max-width: 600px;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--text);
+  line-height: 1.5;
+  letter-spacing: -0.01rem;
+}
+
+.main-center {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 80vh;
 }
 
 .logo {
   width: 340px;
   max-width: 80vw;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.7rem;
   display: block;
 }
 
-.description {
-  max-width: 540px;
+.cta {
+  font-size: 0.7rem;
+  color: var(--text);
+  margin-top: 0.5rem;
   text-align: center;
 }
-
-.intro {
-  font-size: 1.08rem;
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
-}
-
-.cta {
-  font-size: 1.1rem;
-  font-weight: 600;
+.cta a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #154554;
 }
 
 .mail {
@@ -89,18 +107,48 @@ body {
 
 .footer {
   width: 100%;
-  padding: 1.2rem 0 0.7rem 0;
-  text-align: center;
-  font-size: 0.93rem;
-  color: var(--muted);
   display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 2.2rem 1.1rem 2.2rem;
+  box-sizing: border-box;
+  font-size: 0.82rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: var(--bg);
+  z-index: 10;
+}
+
+.copyright {
+  color: var(--muted);
+  font-size: 0.52rem;
+  align-self: flex-end;
+  text-align: left;
+  max-width: 40vw;
+  letter-spacing: -0.02rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .versatile {
-  font-size: 0.85rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+  text-align: right;
+  align-self: flex-end;
+  max-width: 320px;
+  word-break: break-word;
+  line-height: 9px;
+}
+
+.versatile b {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.versatile i {
   font-style: italic;
   color: var(--muted);
-  margin-top: 0.2rem;
+  font-size: 0.58rem;
 } 
