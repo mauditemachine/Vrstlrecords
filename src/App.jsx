@@ -10,9 +10,9 @@ function App() {
       <main className="main-center">
         <Logo />
         <p className="cta">
-          Website under construction, for demos please send it at{' '}
-          <a href="mailto:demo@vrstlrecords.com" className="mail">
-            demo@vrstlrecords.com
+          Please send your demos here:{' '}
+          <a href="https://www.labelradar.com/labels/VRSTLRecords/portal" className="mail" target="_blank" rel="noopener noreferrer">
+            @https://www.labelradar.com/labels/VRSTLRecords/portal
           </a>
         </p>
       </main>
